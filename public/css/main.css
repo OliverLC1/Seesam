@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    line-height: 1.3rem;
+    font-family: 'GT-Walsheim-Pro-Regular';
+}
+@font-face {
+    font-family:'GT-Walsheim-Pro-Regular';
+    src: url(../fonts/GT-Walsheim-Pro-Regular.ttf);
+    font-family: 'GT-Walsheim-Pro-Medium-Oblique';
+    src: url(../fonts/GT-Walsheim-Pro-Medium-Oblique.ttf);
+font-family: 'GT-Walsheim-Pro-Bold';
+    src: url(../fonts/GT-Walsheim-Pro-Bold.ttf);
+}
+nav {
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F2;
+    position: relative;
+    margin-bottom: 1rem;
+    box-shadow: 0px 0px 10px .2px;
+}
+nav img {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4rem; 
+    cursor: pointer;
+}
+.nav-btns {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (max-width: 50rem) {
+    nav img {
+        height: 3rem; 
+    }
+}
+.btn-nav {
+    text-decoration: none;
+    background-color: #ffff;
+    color: black;
+    border: solid black .5px;
+    border-radius: 5rem;
+    padding: .8rem 1.2rem;
+    margin: .2rem;  
+}
+@media (max-width: 50rem) {
+    .btn-nav {
+        padding: .4rem .8rem;
+    }
+}
+.btn-nav-main {
+    background-color: #FF6A10;
+    color: #fff;
+}
+.btn-nav:hover, 
+.btn-nav:active {
+    background-color:#4a4a4ac4; 
+    color: #fff;
+}
+.btn-nav-main:hover,
+.btn-nav-main:active {
+    background-color: #FF6A10;
+    color: black;
+}
+.content-with{
+    margin-left: 8rem;
+}
+h2 {
+   margin: 2rem 0; 
+}
+.section-one {
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    font-size: 1.2rem;
+    padding-right: 3rem;
+}
+.section-one h1 {
+    font-family: 'GT-Walsheim-Pro-Bold';
+    padding: 3rem 0;
+}
+@media (max-width: 50rem) {
+    .section-one h1 {
+        font-size: 2rem;
+        line-height: 1.8rem;
+    }
+}
+.section-radios h2 {
+    font-family: 'GT-Walsheim-Pro-Bold';
+    padding: 2rem 0;  
+}
+.section-radios {
+    margin-bottom: 2rem;   
+}
+.radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 12rem;
+}
+.radio-input[type="radio"]{
+    display: none;
+}
+#show {
+    display: none;
+}
+.radio-radio {
+    margin-right: .5rem;
+    width: 1.2em;
+    height: 1.2em;
+    border: .5px solid #4a4a4ac4;
+    border-radius: 50%;
+    box-sizing: border-box;
+    padding: .3rem;
+}
+.radio-radio::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #FF6A10;
+    border-radius: 50%;
+    transform: scale(0);
+}
+.radio-input:checked + .radio-radio::after {
+    transform: scale(1);
+}
+.section-bodywork h2 {
+    font-family: 'GT-Walsheim-Pro-Bold';
+}
+.section-area {
+    display: flex; 
+}
+@media (max-width: 40rem) {
+    .section-area {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+.area-title {
+    font-family: 'GT-Walsheim-Pro-Bold';
+    margin-bottom: 3rem;
+    margin-right: 8rem;
+}
+select {
+    display: flex;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    padding: .5rem 2.8rem .5rem 1rem;
+    border-color: #FF6A10;
+    border-radius: 5rem;
+    appearance: none;   
+}
+.select-area {
+    position: relative;
+    padding-top: 2rem;
+}
+/* EI SUUDA HETKEL NOOLT PAIGUTADA ÕIGE ELEMENDIGA SUHTESSE */
+
+/*.arrow {
+    position: absolute;
+    margin-left: 1rem;
+    top: 3.5rem;
+    left: 7rem;
+    background-color: transparent;
+    height: 100%;
+    width: 2rem;
+    pointer-events: none;
+}
+.arrow::before,
+.arrow::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+.arrow::before {
+    border-left: .3rem solid transparent;
+    border-right: .3rem solid transparent;
+    border-top: .4rem solid #4a4a4ac4;
+    top: 45%;
+    left: .7rem;
+} */
+.section-three-location h2 {
+    font-family: 'GT-Walsheim-Pro-Bold';
+    padding: 2rem 0;
+}
+.section-three-location {
+    margin-top: 2rem;
+}
+.search-bar {
+font-size: 1.4rem;
+padding: .3rem;
+border: solid .5px #FF6A10;
+border-radius: 5rem;
+text-align: center;
+}
+.section-four {
+    display: flex;
+}
+@media (max-width: 40rem) {
+    .section-four {
+        flex-direction: column;
+        justify-content: left;
+    }
+}
+.section-four-vehicle-age {
+    margin-left: 13rem;
+}
+#vehicle {
+    margin-top: 2rem;
+}
+.footer-1 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding: 1rem 14rem;
+    color: white;
+    background-image: linear-gradient( rgb(255, 174, 0),#FF6A10);
+}
+@media (max-width: 60rem) {
+    .footer-1 {
+        padding: 0rem 4rem;
+    }
+}
+@media (max-width: 40rem) {
+    .footer-1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    margin: 1.6rem;
+}
+h3 {
+    padding-bottom: 1.8rem;
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: white;
+    line-height: 1.6rem;
+}
+.footer-2 {
+    display: flex;
+    background-color: #4a4a4ac4;
+    color: white;
+    height: 7rem;
+}
+.footer-2 img{
+    height: 5rem;
+    padding: 1rem;   
+}
+.footer-2 p {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 1rem 0rem 1rem 16rem
+}
+@media (max-width: 60rem) {
+    .footer-2 p {
+        width: 90%;
+        padding: 1rem 0rem 1rem 7rem
+    }
+}
+@media (max-width: 40rem) {
+    .footer-2 p {
+        width: 100%;
+        padding: 1rem 1rem 1rem 2rem;
+    }
+}
+@media (max-width: 40rem) {
+    .footer-2 {
+        height: 9rem;
+    }
+}
